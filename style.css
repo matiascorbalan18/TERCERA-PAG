@@ -243,13 +243,13 @@ nav a:last-child {padding-bottom: 0.5em;}
     max-width: 800px;
     margin-block: 1.5em;
     padding: 2em;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.219);
     border-radius: var(--rounded-sm);
     transition: 300ms;
 }
 
 .service:hover {
-    box-shadow: 0 0 35px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.452);
 }
 
 #gallery, #pricing h1, #contact h1 {
@@ -354,11 +354,38 @@ nav a:last-child {padding-bottom: 0.5em;}
     align-items: flex-end;
 }
 
+.social {
+    display: flex;
+    gap: 1em;
+}
+
+.social a {
+    font-size: 1.2em;
+    color: var(--accent);
+    transition: 200ms;
+}
+
+.social a:hover {color: var(--primary);}
+
 footer {
     background-color: var(--bg-3);
     padding: 2em;
     text-align: center;
     color: var(--primary);
+}
+
+@media screen and (min-width: 900px) {
+    .grid {
+        max-width: 800px;
+        columns: 2;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .grid {
+        max-width: 1200px;
+        columns: 3;
+    }
 }
 
 @media screen and (max-width: 760px) {
